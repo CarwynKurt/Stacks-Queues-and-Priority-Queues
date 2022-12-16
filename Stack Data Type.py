@@ -15,3 +15,7 @@ class Queue:
         while len(self) > 0:
             yield self.dequeue()
 
+# Stack Class
+class Stack(Queue):
+    def dequeue(self):
+        return self._elements.pop()
