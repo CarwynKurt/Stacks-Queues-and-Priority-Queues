@@ -10,3 +10,10 @@ heappush(fruits, "apple")
 heappush(fruits, "banana")
 
 print(fruits)
+
+# Import Heap Pop
+from heapq import heappop
+
+# Heap Pop
+heappop(fruits)
+print(fruits)
