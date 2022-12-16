@@ -10,7 +10,7 @@ class Queue:
         return len(self._elements)
 
     def __iter__(self):
-        white len(self) > 0:
+        while len(self) > 0:
             yield self.dequeue()
 
     def enqueue(self, element):
@@ -19,4 +19,11 @@ class Queue:
     def dequeue(self):
         return self._elements.popleft()
 
-#
+# Iterable Queue
+fifo = Queue("1st", "2nd", "3rd")
+print(len(fifo))
+
+for element in fifo:
+    print(element)
+
+print(len(fifo))
