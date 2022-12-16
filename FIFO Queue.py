@@ -1,4 +1,4 @@
-# queues.py
+# FIFO Queue
 
 # Import
 from collections import deque

@@ -1,4 +1,4 @@
-# Iterable FIFO Queue
+# Stack Data Type
 
 # Import Queue
 from collections import deque
@@ -15,17 +15,3 @@ class Queue:
         while len(self) > 0:
             yield self.dequeue()
 
-    def enqueue(self, element):
-        self._elements.append(element)
-
-    def dequeue(self):
-        return self._elements.popleft()
-
-# Iterable Queue
-fifo = Queue("1st", "2nd", "3rd")
-print(len(fifo))
-
-for element in fifo:
-    print(element)
-
-print(len(fifo))
