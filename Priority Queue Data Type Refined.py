@@ -15,7 +15,6 @@ class PriorityQueue:
     def dequeue(self):
         return heappop(self._elements)[1]
 
-# Priority Queue Refined
 CRITICAL = 3
 IMPORTANT = 2
 NEUTRAL = 1
